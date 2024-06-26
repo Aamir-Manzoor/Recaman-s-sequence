@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recaman Sequence Visualization</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+        h1 {
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+        canvas {
+            border: 1px solid #000;
+            background-color: #fff;
+        }
+        .container {
+            text-align: center;
+            margin-top: 20px;
+        }
+        input[type="range"] {
+            width: 300px;
+        }
+        #sliderValue {
+            font-weight: 700;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Recaman Sequence Visualization</h1>
+    <canvas id="sequenceCanvas" width="1200" height="680"></canvas>
+    <div class="container">
+        <input type="range" id="sequenceSlider" min="0" max="65" value="65">
+        <span id="sliderValue">65</span>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
